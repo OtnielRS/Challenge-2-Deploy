@@ -11,7 +11,7 @@ export default function Form({ condition, handleSubmit, movie }) {
     imgUrl: "",
     trailerUrl: "",
     rating: "",
-    genreId: 0,
+    genreId: "",
   });
 
   async function fetchGenres() {
