@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .welcome {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <title>Login Page</title>
+</head>
+
+<body class="bg-stone-900">
+    <div class="flex flex-col lg:flex-row">
+        <div class="poster rounded-2xl md:w-1/2 md:h-screen m-5 overflow-hidden">
+            <img src="../src/assets/bbb GIF by Crunchyroll.gif" class="w-full h-full object-fill" alt="">
+        </div>
+
+        <div class="flex login rounded-2xl bg-stone-800 order-1 p-5 my-5 mr-5 md:justify-center md: md:w-1/2 ml-5 items-center">
+            <div class="p5">
+                <h2 class="welcome text-6xl text-orange-100 ">Welcome Back</h2>
+                <form action="" class="flex flex-col items-center gap-2 bg-stone-800">
+                    <input type="text" class="h-10 bg-stone-900 border-stone-700 text-orange-50 focus:border-orange-600 mt-5 border-b-black rounded-2xl" placeholder="  Email">
+                    <input type="password" class="h-10 bg-stone-900 border-stone-700 text-orange-50 focus:border-orange-600 mt-3 border-b-black rounded-2xl" placeholder="  Password"><br>
+                    <button class="h-10 mt-3 bg-orange-700 hover:bg-orange-800 text-white px-10 rounded-2xl justify-self-center">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

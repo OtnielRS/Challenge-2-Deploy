@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav class="flex justify-between gap-5 bg-[#bc8764] border-b-black p-6">
+        <div class="inline-flex">
+            <div class="web-logo justify-start p-3">
+                <span class="text-black-700 text-xl"
+                    style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Anime
+                    Station</span>
+            </div>
+
+            <div class="search-bar ml-3">
+                <form action="">
+                    <input type="text" placeholder="Search..." class="bg-white rounded-2xl p-2 gap-3">
+                    <button type="submit">
+                        <img src="../assets/search-interface-symbol.png" class="h-7 ml-3" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="justify-center-safe text-xl">
+            <span class="m-3 text-white"
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Log Out</span>
+        </div>
+    </nav>
+</body>
+
+</html>

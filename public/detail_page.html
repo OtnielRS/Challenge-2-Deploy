@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Detail Page</title>
+</head>
+
+<body class="bg-stone-50">
+    <nav class="flex justify-between gap-5 bg-[#bc8764] border-b-black p-6">
+        <div class="inline-flex">
+            <div class="web-logo justify-start p-3">
+                <span class="text-black-700 text-xl"
+                    style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Anime
+                    Station</span>
+            </div>
+
+            <div class="search-bar ml-3">
+                <form action="">
+                    <input type="text" placeholder="Search..." class="bg-white rounded-2xl p-2 gap-3">
+                    <button type="submit">
+                        <img src="../assets/search-interface-symbol.png" class="h-7 ml-3" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="justify-center-safe text-xl">
+            <span class="m-3 text-white"
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Log Out</span>
+            <!-- <span class="m-3 text-white"
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></span> -->
+        </div>
+    </nav>
+
+    <!-- Poster -->
+    <h1 class="text-3xl font-bold text-center my-10">MOVIE DETAIL</h1>
+    <div class="flex flex-wrap justify-center px-10">
+        <div class="">
+            <img src="../assets/Rias.jpg" class="h-full w-full" alt="">
+        </div>
+        <div class="grid ml-10">
+            <div class="relative w-fill">
+                <span class="font-bold h-fit text-center text-3xl m-5">Ini adalah Rias Gremory</span>
+            </div>
+            <div class="flex flex-row md: mt-5 justify-center">
+                <div class="bg-white w-25 h-fit border-3 rounded-2xl m-3 p-3">
+                    ⭐ 9.9/10
+                </div>
+                <div class="bg-[#551B14] w-25 h-fit text-center text-[#CDC5B4] rounded-2xl m-3 p-3">
+                    <a
+                        href="https://www.youtube.com/watch?v=Q6iK6DjV_iE&pp=ygUTdGVua2kgbm8ga28gdHJhaWxlcg%3D%3D">Trailer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sinopsis mt-16 px-10 lg:px-60 md:px-40 sm:px-20">
+        <label for="" class="bg-[#551B14] p-3 rounded-2xl text-[#CDC5B4]">Synopsis</label>
+        <p class="mt-10 bg-white border-4 p-5 rounded-2xl text-[#551B14]">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ad error odit ex rem saepe vitae provident perspiciatis iste placeat maiores nam sequi,
+            alias incidunt ipsam nesciunt a. Delectus, voluptas voluptatum!</p>
+    </div>
+</body>
+
+</html>

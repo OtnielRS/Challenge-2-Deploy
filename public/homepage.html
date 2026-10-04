@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            font-variation-settings:
+                "width" 100;
+        }
+    </style>
+</head>
+
+<body class="">
+    <nav class="flex justify-between gap-5 bg-[#bc8764] border-b-black p-6">
+        <div class="inline-flex">
+            <div class="web-logo justify-start p-3">
+                <span class="text-black-700 text-xl"
+                    style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Anime
+                    Station</span>
+            </div>
+
+            <div class="search-bar ml-3">
+                <form action="">
+                    <input type="text" placeholder="Search..." class="bg-white rounded-2xl p-2 gap-3">
+                    <button type="submit">
+                        <img src="../assets/search-interface-symbol.png" class="h-7 ml-3" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="justify-center-safe text-xl">
+            <span class="m-3 text-white"
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Login</span>
+            <span class="m-3 text-white"
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Register</span>
+        </div>
+    </nav>
+
+    <!-- Sort and Filter -->
+    <div>
+        <div class="flex flex-col justify-center md:flex-row">
+            <form class="max-w-sm ml-10 pt-5">
+                <label for="genre" class="block mb-2.5 text-sm font-medium text-heading">Genre</label>
+                <select id="Genre"
+                    class="block w-50 px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
+                    <option selected>Choose a genre</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Action">Action</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Fantasy">Fantasy</option>
+                </select>
+            </form>
+            <form class="max-w-sm ml-10 pt-5">
+                <label for="sort" class="block mb-2.5 text-sm font-medium text-heading">Sort</label>
+                <select id="Sort"
+                    class="block w-50 px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body">
+                    <option selected>Sort By</option>
+                    <option value="Rating">Rating</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Oldest">Oldest</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+    <!-- Card -->
+    <h2 class="pt-10 flex justify-center items-center text-6xl">Anime Movie Fall 2026</h2>
+
+    <div class="md:grid md:grid-cols-5 gap-3 flex flex-col m-10">
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="../assets/Rias.jpg" alt="Rias-Onesan">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Judul Anime</div>
+                    <p
+                        class="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
+                        Ini adalah sinopsis anime movie
+                    </p>
+                </div>
+                <div class="px-6 pt-2 pb-2">
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Genre</span>
+                    <span
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Rating</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="px-10 flex justify-center">
+        <div class="inline-flex">
+            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+                Prev
+            </button>
+            <p class="px-5">
+                Page: 1
+            </p>
+            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+                Next
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

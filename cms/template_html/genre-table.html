@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Main Table</title>
+</head>
+
+<body>
+    <nav class="flex justify-between gap-5 bg-[#bc8764] border-b-black p-6">
+        <div class="inline-flex">
+            <div class="web-logo justify-start p-3">
+                <span class="text-black-700 text-xl"
+                    style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Anime
+                    Station</span>
+            </div>
+
+            <div class="search-bar ml-3">
+                <form action="">
+                    <input type="text" placeholder="Search..." class="bg-white rounded-2xl p-2 gap-3">
+                    <button type="submit">
+                        <img src="../assets/search-interface-symbol.png" class="h-7 ml-3" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="justify-center-safe text-xl">
+            <span class="m-3 text-white"
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Log Out</span>
+        </div>
+    </nav>
+
+    <h1 class="m-10 text-3xl font-bold">Main Data</h1>
+    <div class="flex justify-center">
+        <table class="table-auto m-10 border-collapse border border-slate-500">
+            <thead>
+                <tr>
+                    <th class="border border-slate-950 p-2">No</th>
+                    <th class="border border-slate-950 p-2">Genre</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td class="border border-slate-950 p-2">1</td>
+                    <td class="border border-slate-950 p-2">Comedy</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-950 p-2">2</td>
+                    <td class="border border-slate-950 p-2">Romance</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-950 p-2">3</td>
+                    <td class="border border-slate-950 p-2">Adventure</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-950 p-2">4</td>
+                    <td class="border border-slate-950 p-2">Action</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-950 p-2">5</td>
+                    <td class="border border-slate-950 p-2">Isekai</td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-950 p-2">6</td>
+                    <td class="border border-slate-950 p-2">Slice of Life</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+
+</html>
