@@ -2,6 +2,28 @@
 
 > Tuliskan API Docs kamu di sini
 
+
+# Anime Station Indonesia App
+
+Anime Station Indonesia App is an website to manage your assets (anime). 
+
+Tech Stack used to build this Web :
+
+- Node JS
+- Express JS framework
+- PostgreSQL
+- Bcrypt
+- Dotenv
+- JSON Web Token
+- ImageKit
+- Sequelize
+- React
+- React-router
+- Toastify
+- Tailwind CSS
+- Vite
+
+
 > Berikut Endpoint pada routes public dan CMS
 
 * Public Site 
@@ -23,4 +45,12 @@
     5. "/patch/:id" - Mengganti poster movie (Butuh Authorisasi dari Login)
     6. "/genres" - Menampilkan data entitas support dalam bentuk table (Butuh Authorisasi dari Login)
     6. "/register" - Menambahkan akun role staff (Butuh Authorisasi dari Login)
+```
+
+
+```
+    LINK DEPLOYMENT :
+        1. PUBLIC : public.alicemorgan.my.id
+        2. CMS : cms.alicemorgan.my.id
+
 ```
