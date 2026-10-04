@@ -12,7 +12,7 @@ import Home from "./page/Home";
 function App() {
   return (
     <>
-    <div className="p-5 bg-[#8c7a6b] h-300]">
+    <div className="p-5 bg-[#8c7a6b] min-h-screen">
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={<LoginPage />} />
