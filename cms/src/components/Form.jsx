@@ -11,7 +11,7 @@ export default function Form({ condition, handleSubmit, movie }) {
     imgUrl: "",
     trailerUrl: "",
     rating: "",
-    genreId: "",
+    genreId: 0,
   });
 
   async function fetchGenres() {
@@ -76,7 +76,7 @@ export default function Form({ condition, handleSubmit, movie }) {
         imgUrl: movie.imgUrl,
         trailerUrl: movie.trailerUrl,
         rating: movie.rating,
-        genreId: +movie.genreId,
+        genreId: movie.genreId,
       });
     }
   }, [movie]);
@@ -161,7 +161,6 @@ export default function Form({ condition, handleSubmit, movie }) {
           <select
             type="text"
             className="bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
-            value={form.genreId}
             onChange={(event) => getFormData("genreId", event)}
           >
             <option value="">
