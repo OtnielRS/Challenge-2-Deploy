@@ -5,7 +5,7 @@ export default function Card({movies, index}) {
     <>
       <div className="flex">
         <Link to={`/detail/${movies.id}`} className="max-w-sm rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={movies.imgUrl} alt="Rias-Onesan" />
+          <img className="w-full h-64" src={movies.imgUrl} alt="Rias-Onesan" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{movies.title}</div>
             <p className="opacity-0 hover:opacity-100 h-0 hover:h-20 text-base transition-all duration-300 ease-in-out">
