@@ -1,11 +1,10 @@
-import HomePage from "./views/Homepage";
-import DetailPage from "./views/DetailPage";
+import HomePage from "./pages/Homepage";
+import DetailPage from "./pages/DetailPage";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
-import BaseLayout from "./views/BaseLayout";
+import BaseLayout from "./pages/BaseLayout";
 
 function App() {
-  const [page, setPage] = useState("home");
   return (
     <div className="">
       <>

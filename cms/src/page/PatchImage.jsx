@@ -102,7 +102,7 @@ export default function PatchImage() {
                 </span>
               </label>
             </div>
-            <form action="" id="container-patchImgUrl">
+            <form id="container-patchImgUrl">
               <input
                 type="file"
                 placeholder="Please upload your file"

@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router";
 
-export default function NavBar({ setPage }) {
+export default function NavBar() {
   const navigate = useNavigate()
   async function handleLogout() {
     localStorage.clear();
@@ -8,11 +8,11 @@ export default function NavBar({ setPage }) {
   }
   return (
     <>
-      <nav className="flex justify-between gap-5 bg-[#bc8764] border-b-black p-6 rounded-2xl">
+      <nav className="flex justify-between gap-5 bg-[#283845] border-b-black p-6 rounded-2xl">
         <div className="inline-flex">
           <NavLink to={"/"} className="web-logo justify-start p-3">
             <span
-              className="text-black-700 text-xl"
+              className="text-black-700 text-xl text-[#faf0ca]"
               style={{
                 fontFamily:
                   '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif',
@@ -23,7 +23,7 @@ export default function NavBar({ setPage }) {
           </NavLink>
           <NavLink to={"/add"} className="web-logo justify-start p-3">
             <span
-              className="text-black-700 text-xl"
+              className="text-black-700 text-xl text-[#faf0ca]"
               style={{
                 fontFamily:
                   '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif',
@@ -34,7 +34,7 @@ export default function NavBar({ setPage }) {
           </NavLink>
           <NavLink to={"/genres"} className="web-logo justify-start p-3">
             <span
-              className="text-black-700 text-xl"
+              className="text-black-700 text-xl text-[#faf0ca]"
               style={{
                 fontFamily:
                   '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif',
@@ -45,7 +45,7 @@ export default function NavBar({ setPage }) {
           </NavLink>
           <NavLink to={"/register"} className="web-logo justify-start p-3">
             <span
-              className="text-black-700 text-xl"
+              className="text-black-700 text-xl text-[#faf0ca]"
               style={{
                 fontFamily:
                   '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif',
@@ -55,9 +55,9 @@ export default function NavBar({ setPage }) {
             </span>
           </NavLink>
         </div>
-        <NavLink onClick={handleLogout} className="justify-center-safe text-xl">
+        <NavLink onClick={handleLogout} className="justify-center-safe text-xl text-[#faf0ca]">
           <span
-            className="m-3 text-white"
+            className="m-3 text-[#faf0ca]"
             style={{
               fontFamily:
                 '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif',

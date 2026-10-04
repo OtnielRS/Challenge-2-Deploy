@@ -12,7 +12,7 @@ import Home from "./page/Home";
 function App() {
   return (
     <>
-    <div className="p-5 bg-stone-900">
+    <div className="p-5 bg-[#8c7a6b] h-300]">
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={<LoginPage />} />

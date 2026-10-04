@@ -103,13 +103,13 @@ export default function HomePage({ setPage }) {
           <form className="max-w-sm ml-10 pt-5">
             <label
               htmlFor="genre"
-              className="block mb-2.5 text-sm font-medium text-heading"
+              className="block mb-2.5 text-sm font-medium"
             >
               Genre
             </label>
             <select
               id="Genre"
-              className="block w-50 px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+              className="block w-50 px-3 py-2.5 border border-medium text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
               onChange={(e) => {
                 setFilter(e.target.value)
                 setcurrentPage(1)}}
@@ -131,13 +131,13 @@ export default function HomePage({ setPage }) {
           <form className="max-w-sm ml-10 pt-5">
             <label
               htmlFor="sort"
-              className="block mb-2.5 text-sm font-medium text-heading"
+              className="block mb-2.5 text-sm font-medium"
             >
               Sort
             </label>
             <select
               id="Sort"
-              className="block w-50 px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+              className="block w-50 px-3 py-2.5 border border-medium text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
               onChange={(e) => handleSort(e.target.value)}
             >
               <option value="">Sort By</option>
@@ -152,7 +152,7 @@ export default function HomePage({ setPage }) {
           <form className="max-w-sm ml-10 pt-5 flex flex-col">
             <label
               htmlFor="search"
-              className="w-15 block mb-2.5 text-sm font-medium text-heading"
+              className="w-15 block mb-2.5 text-sm font-medium"
             >
               Search :
             </label>

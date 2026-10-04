@@ -54,21 +54,21 @@ export default function LoginPage({ setPage }) {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row h-screen">
       <div className="poster rounded-2xl md:w-1/2 md:h-screen m-5 overflow-hidden">
-        <img src={gif} className="w-full h-full object-fill" alt="Welcome" />
+        <img src={gif} className="w-full h-[80vh] object-fill" alt="Welcome" />
       </div>
-      <div className="flex login rounded-2xl bg-stone-800 order-1 p-5 my-5 mr-5 md:justify-center md: md:w-1/2 ml-5 items-center">
-        <div className="p5">
+      <div className="flex login h-[80vh] rounded-2xl bg-[#202C39] order-1 p-5 my-5 mr-5 md:justify-center md:w-1/2 ml-5 items-center">
+        <div className="p-5">
           <h2 className="welcome text-6xl text-orange-100 ">Welcome Back</h2>
           <form
             onSubmit={handleLogin}
-            className="flex flex-col items-center gap-2 bg-stone-800"
+            className="flex flex-col items-center gap-2 bg-[#202C39]"
           >
             <input
               type="text"
               id="email"
-              className="h-10 bg-stone-900 border-stone-700 text-orange-50 focus:border-orange-600 mt-5 border-b-black rounded-2xl"
+              className="h-10 bg-stone-900 border-stone-700 text-orange-50 p-4 mt-5 border-b-black rounded-2xl"
               placeholder="youremail@gmail.com"
               autoComplete="current-email"
               onChange={(e) => setEmail(e.target.value)}
@@ -76,8 +76,8 @@ export default function LoginPage({ setPage }) {
             <input
               type="password"
               id="password"
-              className="h-10 bg-stone-900 border-stone-700 text-orange-50 focus:border-orange-600 mt-3 border-b-black rounded-2xl"
-              placeholder="  Enter your password"
+              className="h-10 bg-stone-900 border-stone-700 text-orange-50 p-4 mt-3 border-b-black rounded-2xl"
+              placeholder="Enter your password"
               autoComplete="current-password"
               onChange={(e) => setPassword(e.target.value)}
             />

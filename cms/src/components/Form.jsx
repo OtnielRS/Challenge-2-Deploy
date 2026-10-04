@@ -1,6 +1,7 @@
 import { useEffect, useState, useParams } from "react";
 import axios from "axios";
 import Toastify from "toastify-js";
+import baseUrl from "../constant/baseUrl";
 
 export default function Form({ condition, handleSubmit, movie }) {
   const [genres, setGenres] = useState([]);
@@ -16,7 +17,7 @@ export default function Form({ condition, handleSubmit, movie }) {
   async function fetchGenres() {
     try {
       const response = await axios.get(
-        `https://server.alicemorgan.my.id/genres`,
+        `${baseUrl}/genres`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.access_token}`,
@@ -51,8 +52,8 @@ export default function Form({ condition, handleSubmit, movie }) {
 
     if (fieldname === "genreId" || fieldname === "rating") {
       value = Number(event.target.value);
-      console.log(value);
-      console.log(typeof(value));
+      // console.log(value);
+      // console.log(typeof(value));
     }
 
     setForm((prevData) => {
@@ -82,7 +83,7 @@ export default function Form({ condition, handleSubmit, movie }) {
 
   return (
     <form
-      className="max-w-3xl mx-auto bg-[#DDA15E] mt-10 rounded-xl border border-amber-200/60 shadow-sm"
+      className="max-w-3xl mx-auto bg-[#F29559] mt-10 rounded-xl border border-[#283845] shadow-sm"
       onSubmit={(e) => handleSubmit(e, form)}
     >
       <div id="Title">
@@ -97,7 +98,7 @@ export default function Form({ condition, handleSubmit, movie }) {
           </label>{" "}
           <br />
           <input
-            className="width-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
+            className="w-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
             name="title"
             value={form.title}
             onChange={(event) => getFormData("title", event)}
@@ -110,8 +111,8 @@ export default function Form({ condition, handleSubmit, movie }) {
           <br />
           <input
             type="text"
-            className="width-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
-            name="title"
+            className="w-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black h-fit"
+            name="synopsis"
             value={form.synopsis}
             onChange={(event) => getFormData("synopsis", event)}
           />
@@ -122,8 +123,8 @@ export default function Form({ condition, handleSubmit, movie }) {
           </label>{" "}
           <br />
           <input
-            className="width-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
-            name="title"
+            className="w-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
+            name="trailerUrl"
             value={form.trailerUrl}
             onChange={(event) => getFormData("trailerUrl", event)}
           />
@@ -134,8 +135,8 @@ export default function Form({ condition, handleSubmit, movie }) {
           </label>{" "}
           <br />
           <input
-            className="width-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
-            name="title"
+            className="w-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
+            name="imageUrl"
             value={form.imgUrl}
             onChange={(event) => getFormData("imgUrl", event)}
           />
@@ -146,8 +147,8 @@ export default function Form({ condition, handleSubmit, movie }) {
           </label>{" "}
           <br />
           <input
-            className="width-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
-            name="title"
+            className="w-full bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
+            name="rating"
             value={form.rating}
             onChange={(event) => getFormData("rating", event)}
           />
@@ -162,7 +163,7 @@ export default function Form({ condition, handleSubmit, movie }) {
             className="bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
             onChange={(event) => getFormData("genreId", event)}
           >
-            <option value="" disabled>
+            <option value="">
               Select Genre
             </option>
             {genres.map((genre) => {
@@ -175,8 +176,8 @@ export default function Form({ condition, handleSubmit, movie }) {
           </select>
         </div>
       </div>
-      <div className="mt-5">
-        <button className="w-full mt-5 py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-[#606C38] hover:bg-[#283618] shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+      <div className="mt-5 flex justify-center p-4">
+        <button className="w-1/2 mt-5 py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-[#606C38] hover:bg-[#283618] shadow-[2px_2px_0px_rgba(0,0,0,1)]">
           {condition === "edit" ? "Update Data" : "Add New Entry"}
         </button>
       </div>

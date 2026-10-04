@@ -5,7 +5,7 @@ import baseUrl from "../constant/baseUrl";
 import gifLoading from "../assets/Bean Eater@1x-1.0s-200px-200px.svg";
 import Button from "../components/Button";
 
-export default function GenreTable({ setPage }) {
+export default function GenreTable() {
   const [genres, setGenres] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -54,13 +54,13 @@ export default function GenreTable({ setPage }) {
       ) : (
         <>
           <Button/>
-          <h1 className="m-10 text-3xl font-bold text-white">Genre Data</h1>
-          <div className="flex justify-center">
-            <table className="table-auto m-10 border-collapse border border-slate-500">
-              <thead>
+          <h1 className="m-10 text-3xl font-bold text-[#F2D492]">Genre Data</h1>
+          <div className="relative">
+            <table className="table-fixed m-10 border border-slate-500">
+              <thead className="bg-[#BC8764]">
                 <tr>
-                  <th className="border border-slate-950 text-white p-2">No</th>
-                  <th className="border border-slate-950 text-white p-2">
+                  <th className="border border-[#D8C3B0] p-2 text-white ">No</th>
+                  <th className="border border-[#D8C3B0] p-2 text-white ">
                     Genre
                   </th>
                 </tr>
@@ -69,11 +69,11 @@ export default function GenreTable({ setPage }) {
                 {genres.map((el, index) => {
                   return (
                     <>
-                      <tr>
-                        <td className="border border-slate-950 text-white p-2">
+                      <tr className="bg-[#F2D492]">
+                        <td className="border border-[#D8C3B0] p-2 text-[#283845] ">
                           {el.id}
                         </td>
-                        <td className="border border-slate-950 text-white p-2">
+                        <td className="border border-[#D8C3B0] p-2 text-[#283845] ">
                           {el.name}
                         </td>
                       </tr>

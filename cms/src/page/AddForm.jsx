@@ -1,10 +1,9 @@
 import Form from "../components/Form";
-import { useState } from "react";
 import Toastify from "toastify-js";
-import axios, { formToJSON } from "axios";
 import baseUrl from "../constant/baseUrl";
 import { useNavigate } from "react-router";
 import Button from "../components/Button";
+import axios from "axios"
 
 export default function AddForm() {
   const navigate = useNavigate();
@@ -12,6 +11,7 @@ export default function AddForm() {
   async function handleSubmit(e, form) {
     try {
       e.preventDefault();
+      console.log(form);
       const response = await axios.post(`${baseUrl}/movies/`, form, {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
@@ -40,7 +40,7 @@ export default function AddForm() {
         newWindow: true,
         close: true,
         gravity: "bottom", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
+        position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
           background: "#F87171",

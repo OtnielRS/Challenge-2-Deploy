@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import Toastify from "toastify-js";
 import baseUrl from "../constant/baseUrl";
 
-export default function AddStaff({ setPage }) {
+export default function AddStaff() {
   const navigate = useNavigate()
   const [form, setForm] = useState({
     username: "",
@@ -46,7 +46,7 @@ export default function AddStaff({ setPage }) {
         newWindow: true,
         close: true,
         gravity: "bottom", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
+        position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
           background: "#F87171",
@@ -66,8 +66,9 @@ export default function AddStaff({ setPage }) {
   }
   return (
     <>
+      <Button/>
       {/* Add User */}
-      <form className="max-w-3xl mx-auto bg-[#DDA15E] mt-10 rounded-xl border border-amber-200/60 shadow-sm" onSubmit={handleSubmit}>
+      <form className="max-w-3xl mx-auto bg-[#FFB627] mt-10 rounded-xl border border-[#202C39] shadow-sm" onSubmit={handleSubmit}>
         <div id="Title">
           <h1 className="m-10 font-bold text-2xl max-">Register account</h1>
         </div>
@@ -132,8 +133,8 @@ export default function AddStaff({ setPage }) {
             />
           </div>
         </div>
-        <div className="mt-5">
-          <button className="w-full mt-5 py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-[#606C38] hover:bg-[#283618] shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+        <div className="mt-5 flex justify-center py-4">
+          <button className="w-1/2 mt-5 py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-[#606C38] hover:bg-[#283618] shadow-[2px_2px_0px_rgba(0,0,0,1)]">
             Add User
           </button>
         </div>

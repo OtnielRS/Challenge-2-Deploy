@@ -1,5 +1,4 @@
 import Form from "../components/Form";
-import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import Toastify from "toastify-js";
@@ -32,7 +31,7 @@ export default function EditData() {
         newWindow: true,
         close: true,
         gravity: "bottom", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
+        position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
           background: "#F87171",
@@ -76,7 +75,7 @@ export default function EditData() {
         newWindow: true,
         close: true,
         gravity: "bottom", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
+        position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
           background: "#F87171",
