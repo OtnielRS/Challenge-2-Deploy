@@ -2,6 +2,7 @@ import { useEffect, useState, useParams } from "react";
 import axios from "axios";
 import Toastify from "toastify-js";
 import baseUrl from "../constant/baseUrl";
+import SubmitButton from "./SubmitButton";
 
 export default function Form({ condition, handleSubmit, movie }) {
   const [genres, setGenres] = useState([]);
@@ -16,14 +17,11 @@ export default function Form({ condition, handleSubmit, movie }) {
 
   async function fetchGenres() {
     try {
-      const response = await axios.get(
-        `${baseUrl}/genres`,
-        {
-          headers: {
-            Authorization: `Bearer ${localStorage.access_token}`,
-          },
+      const response = await axios.get(`${baseUrl}/genres`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.access_token}`,
         },
-      );
+      });
 
       // console.log(response);
 
@@ -163,9 +161,7 @@ export default function Form({ condition, handleSubmit, movie }) {
             className="bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
             onChange={(event) => getFormData("genreId", event)}
           >
-            <option value="">
-              Select Genre
-            </option>
+            <option value="">Select Genre</option>
             {genres.map((genre) => {
               return (
                 <option key={genre.id} value={genre.id}>
@@ -176,11 +172,9 @@ export default function Form({ condition, handleSubmit, movie }) {
           </select>
         </div>
       </div>
-      <div className="mt-5 flex justify-center p-4">
-        <button className="w-1/2 mt-5 py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-[#606C38] hover:bg-[#283618] shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-          {condition === "edit" ? "Update Data" : "Add New Entry"}
-        </button>
-      </div>
+      <SubmitButton
+        condition={condition === "edit" ? "Update Data" : "Add New Entry"}
+      />
     </form>
   );
 }
