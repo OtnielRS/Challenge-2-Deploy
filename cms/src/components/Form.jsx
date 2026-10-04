@@ -161,6 +161,7 @@ export default function Form({ condition, handleSubmit, movie }) {
           <select
             type="text"
             className="bg-[#FEFAE0] rounded-2xl px-3 py-2 border-2 border-black"
+            value={form.genreId}
             onChange={(event) => getFormData("genreId", event)}
           >
             <option value="">
