@@ -76,7 +76,7 @@ export default function Form({ condition, handleSubmit, movie }) {
         imgUrl: movie.imgUrl,
         trailerUrl: movie.trailerUrl,
         rating: movie.rating,
-        genreId: movie.genreId,
+        genreId: +movie.genreId,
       });
     }
   }, [movie]);
